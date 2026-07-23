@@ -1,0 +1,7 @@
+langchain-core==0.2.22
+langchain-groq==0.1.6
+python-dotenv==1.0.1
+fastapi==0.111.1
+langserve==0.2.2
+sse-starlette==2.1.2
+uvicorn==0.51.0
