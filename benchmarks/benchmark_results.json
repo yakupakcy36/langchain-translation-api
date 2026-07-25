@@ -1,0 +1,40 @@
+{
+  "project": "LangChain & Groq LCEL Neural Machine Translation API",
+  "model_backbone": "llama-3.1-8b-instant (Groq LPU Inference Engine)",
+  "target_languages": [
+    "Turkish",
+    "German",
+    "French",
+    "Spanish"
+  ],
+  "corpus_size": 6,
+  "results": [
+    {
+      "pipeline": "LCEL + Glossary Guardrail (Llama-3.1-8B)",
+      "bleu_4": 0.7952,
+      "chrf_6": 0.9389,
+      "terminology_fidelity": 1.0,
+      "comet_proxy": 0.9316,
+      "mean_latency_ms": 147.02,
+      "p95_latency_ms": 155.35
+    },
+    {
+      "pipeline": "Zero-Shot LCEL Chain (Llama-3.1-8B)",
+      "bleu_4": 0.1993,
+      "chrf_6": 0.5782,
+      "terminology_fidelity": 0.35,
+      "comet_proxy": 0.4225,
+      "mean_latency_ms": 131.48,
+      "p95_latency_ms": 138.6
+    },
+    {
+      "pipeline": "Lexical Phrase Baseline",
+      "bleu_4": 0.052,
+      "chrf_6": 0.3796,
+      "terminology_fidelity": 0.075,
+      "comet_proxy": 0.2074,
+      "mean_latency_ms": 44.78,
+      "p95_latency_ms": 47.38
+    }
+  ]
+}

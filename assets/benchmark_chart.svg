@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="440" rx="12" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <text x="32" y="42" fill="#f8fafc" font-family="Segoe UI, Inter, sans-serif" font-size="20" font-weight="700">LangChain + Groq LCEL Translation API — Multilingual Benchmark</text>
+  <text x="32" y="66" fill="#94a3b8" font-family="Segoe UI, Inter, sans-serif" font-size="13">Parallel Technical Corpus (EN → TR, DE, FR, ES) | BLEU-4, chrF-6 &amp; Domain Glossary Preservation</text>
+  <rect x="32" y="84" width="12" height="12" rx="3" fill="#38bdf8"/>
+  <text x="50" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">BLEU-4 Score</text>
+  <rect x="237" y="84" width="12" height="12" rx="3" fill="#34d399"/>
+  <text x="255" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">chrF-6 (Morphological)</text>
+  <rect x="442" y="84" width="12" height="12" rx="3" fill="#a78bfa"/>
+  <text x="460" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">Glossary Fidelity (TPR)</text>
+  <rect x="647" y="84" width="12" height="12" rx="3" fill="#fbbf24"/>
+  <text x="665" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">Semantic Alignment</text>
+  <line x1="295.0" y1="115" x2="295.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="295.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.00</text>
+  <line x1="425.0" y1="115" x2="425.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="425.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.25</text>
+  <line x1="555.0" y1="115" x2="555.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="555.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.50</text>
+  <line x1="685.0" y1="115" x2="685.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="685.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.75</text>
+  <line x1="815.0" y1="115" x2="815.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="815.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">1.00</text>
+  <text x="281" y="157" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">LCEL + Glossary Guardrail (Llama-3.1-8B)</text>
+  <text x="281" y="175" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">P95: 155.3 ms</text>
+  <rect x="295" y="125" width="413.5" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="716.5" y="136" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.7952</text>
+  <rect x="295" y="143" width="488.2" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="791.2" y="154" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9389</text>
+  <rect x="295" y="161" width="520.0" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="823.0" y="172" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">1.0000</text>
+  <rect x="295" y="179" width="484.4" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="787.4" y="190" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9316</text>
+  <text x="281" y="251" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">Zero-Shot LCEL Chain (Llama-3.1-8B)</text>
+  <text x="281" y="269" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">P95: 138.6 ms</text>
+  <rect x="295" y="219" width="103.6" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="406.6" y="230" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.1993</text>
+  <rect x="295" y="237" width="300.7" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="603.7" y="248" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.5782</text>
+  <rect x="295" y="255" width="182.0" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="485.0" y="266" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.3500</text>
+  <rect x="295" y="273" width="219.7" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="522.7" y="284" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.4225</text>
+  <text x="281" y="345" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">Lexical Phrase Baseline</text>
+  <text x="281" y="363" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">P95: 47.4 ms</text>
+  <rect x="295" y="313" width="27.0" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="330.0" y="324" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.0520</text>
+  <rect x="295" y="331" width="197.4" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="500.4" y="342" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.3796</text>
+  <rect x="295" y="349" width="39.0" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="342.0" y="360" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.0750</text>
+  <rect x="295" y="367" width="107.8" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="410.8" y="378" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.2074</text>
+</svg>
