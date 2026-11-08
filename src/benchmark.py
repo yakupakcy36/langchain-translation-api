@@ -2,7 +2,7 @@
 """
 Benchmark Suite: LangChain & Groq LCEL Neural Machine Translation API
 Evaluates Multilingual Translation Quality (BLEU-4, chrF-6, Domain Terminology Fidelity,
-and P95 Pipeline Latency) across EN -> {TR, DE, FR, ES} enterprise technical corpora.
+and P95 Pipeline Latency) across EN -> {TR, DE, FR, ES} a small set of technical sentences.
 """
 
 import json
